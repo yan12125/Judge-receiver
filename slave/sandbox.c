@@ -108,7 +108,7 @@ int main(int argc,char *argv[]) {
 	assert(ML>=-1);
 	assert(setuid(0)==0);
 	assert(setgid(0)==0);
-	assert(system("swapoff -a")==0);
+	assert(system("/sbin/swapoff -a")==0);
 	slave=fork();
 	if(slave==0) {
 		char **args=malloc((argc+1)*sizeof(char*));

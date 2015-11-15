@@ -1,8 +1,5 @@
 bin
-dev/full
-dev/null
-dev/urandom
-dev/zero
+dev
 lib
 lib64
 sys/fs/cgroup/memory
